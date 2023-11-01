@@ -38,7 +38,7 @@ function Add() {
    <>
       <div>
           <form className='flex justify-center mt-5'>
-              <input type="text" value={todo.task} className='text-white font-bold text-lg px-5 w-1/2 rounded-lg md:h-10 bg-green-700 outline-none me-3 shadow-white' placeholder='Add Todo Task' onChange={(e)=>addingToTask(e)}/>
+              <input type="text" value={todo.task} className='text-white font-bold text-lg px-5 md:px-1 w-1/2 rounded-lg md:h-10 bg-green-700 outline-none me-3 shadow-white' placeholder='Add Todo Task' onChange={(e)=>addingToTask(e)}/>
               <button type='button' className='bg-white text-green-300 text-lg font-extrabold shadow-white rounded-xl w-20' onClick={()=>addToTask()}>Add</button>
           </form>
       </div>
