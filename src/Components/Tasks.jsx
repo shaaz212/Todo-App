@@ -64,9 +64,9 @@ function Tasks() {
                         showTask.map((todo,index)=>(
                             <div className='flex items-center border-1 border-green-900 text-green-200  h-20 pt-3 md:py-2 mb-2 overflow-x-auto scrollbar-none scroll-smooth'>
                             <p className='w-0 md:w-1 ms-4 text-sm md:text-2xl'>{index+1}</p>
-                            <p className='md:w-80 text-sm md:text-2xl ms-10'>{todo.task}</p>
-                            <Button onClick={()=>showEdit(todo,index)}  variant="outline-warning" className='md:ms-auto ms-2 md:ms-2'><i className='fa-solid fa-pen-to-square text-xs'></i></Button>
-                            <Button variant="outline-danger" className='ms-2 md:ms-5 me-2 md:me-5' onClick={()=>dispatch(deleteFromTodo(todo.id))}><i className='fa-solid fa-trash fa-xs'></i></Button>
+                            <p className='w-80 text-sm md:text-2xl ms-10'>{todo.task}</p>
+                            <Button onClick={()=>showEdit(todo,index)}  variant="outline-warning" className='ms-auto'><i className='fa-solid fa-pen-to-square text-xs'></i></Button>
+                            <Button variant="outline-danger" className='ms-5 md:ms-2 me-5 md:me-2' onClick={()=>dispatch(deleteFromTodo(todo.id))}><i className='fa-solid fa-trash fa-xs'></i></Button>
                         </div>
                         )):null    
                     }
