@@ -66,7 +66,7 @@ function Tasks() {
                             <p className='w-0 md:w-1 ms-4 text-sm md:text-2xl'>{index+1}</p>
                             <p className='w-80 text-sm md:text-2xl ms-10'>{todo.task}</p>
                             <Button onClick={()=>showEdit(todo,index)}  variant="outline-warning" className='ms-auto'><i className='fa-solid fa-pen-to-square text-xs'></i></Button>
-                            <Button variant="outline-danger" className='ms-5 md:ms-2 me-5 md:me-2' onClick={()=>dispatch(deleteFromTodo(todo.id))}><i className='fa-solid fa-trash fa-xs'></i></Button>
+                            <Button variant="outline-danger" className='ms-2 md:ms-5 me-2 md:me-5' onClick={()=>dispatch(deleteFromTodo(todo.id))}><i className='fa-solid fa-trash fa-xs'></i></Button>
                         </div>
                         )):null    
                     }
